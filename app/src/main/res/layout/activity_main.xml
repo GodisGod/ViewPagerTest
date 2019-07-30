@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World!" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#55FFFFFF"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_accordion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AccordionTransformer" />
+
+            <RadioButton
+                android:id="@+id/radio_bg_to_fg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="BackgroundToForegroundTransformer" />
+
+            <RadioButton
+                android:id="@+id/radio_cube_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="CubeInTransformer" />
+
+            <RadioButton
+                android:id="@+id/radio_cube_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="CubeOutTransformer" />
+
+            <RadioButton
+                android:id="@+id/radio_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="DefaultTransformer" />
+
+            <RadioButton
+                android:id="@+id/radio_depth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="DepthPageTransformer" />
+
+            <RadioButton
+                android:id="@+id/radio_draw_from_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="DrawFromBackTransformer" />
+
+            <RadioButton
+                android:id="@+id/radio_flip_horizon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="FlipHorizontalTransformer" />
+
+            <RadioButton
+                android:id="@+id/radio_flip_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="FlipVerticalTransformer" />
+
+            <RadioButton
+                android:id="@+id/radio_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="ForegroundToBackgroundTransformer" />
+
+            <RadioButton
+                android:id="@+id/radio_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="ParallaxPageTransformer" />
+
+            <RadioButton
+                android:id="@+id/radio_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="RotateDownTransformer" />
+
+            <RadioButton
+                android:id="@+id/radio_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="RotateUpTransformer" />
+
+            <RadioButton
+                android:id="@+id/radio_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="StackTransformer" />
+
+            <RadioButton
+                android:id="@+id/radio_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="TabletTransformer" />
+
+            <RadioButton
+                android:id="@+id/radio_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="ZoomInTransformer" />
+
+            <RadioButton
+                android:id="@+id/radio_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="ZoomOutSlideTransformer" />
+
+            <RadioButton
+                android:id="@+id/radio_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="ZoomOutTranformer" />
+
+        </RadioGroup>
+
+    </ScrollView>
+
+</FrameLayout>
